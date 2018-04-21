@@ -17,12 +17,21 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+        
+    <repositories>
+    </repositories>
 
-    <dependencies>
+    <dependencies>        
         <dependency>
             <groupId>com.amazonaws.serverless</groupId>
             <artifactId>aws-serverless-java-container-spring</artifactId>
             <version>1.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-core</artifactId>
+            <version>1.11.313</version>
         </dependency>
         
         <dependency>
@@ -34,7 +43,26 @@
         <dependency>
             <groupId>com.github.derjust</groupId>
             <artifactId>spring-data-dynamodb</artifactId>
-            <version>4.3.1</version>
+            <version>4.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.11.34</version>
+            <type>jar</type>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-comprehend</artifactId>
+            <version>1.11.238</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-polly</artifactId>
+            <version>1.11.313</version>
         </dependency>
 
         <dependency>

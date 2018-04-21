@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.aws.codestar.projecttemplates.controller")
+@ComponentScan(basePackages = "com.aws.codestar.projecttemplates")
 public class Application extends SpringBootServletInitializer {
 
     /*
@@ -62,6 +62,7 @@ public class Application extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) {
+        System.out.println("Start running");
         SpringApplication.run(Application.class, args);
     }
 }

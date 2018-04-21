@@ -14,7 +14,7 @@ Resources:
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
       Runtime: java8
-      CodeUri: HelloWorld-1.0.jar
+      CodeUri: target/HelloWorld-1.0.jar
       MemorySize: 512
       Timeout: 30
       Role:
